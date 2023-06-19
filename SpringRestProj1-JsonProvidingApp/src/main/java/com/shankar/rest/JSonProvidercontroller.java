@@ -14,7 +14,11 @@ public class JSonProvidercontroller {
 	@GetMapping("/register")
 	public ResponseEntity<Customer> getcustomerinfo(){
 		Customer cust=new Customer(1012, "Shankar Reddy","Pedda Anberpet",1010.00f);
+
 		System.out.println("JSonProvidercontroller.getcustomerinfo()");
+
+		
+//>>>>>>> branch 'master' of https://github.com/Shankar2277/SpringMicroservices.git
 		return new ResponseEntity<Customer>(cust,HttpStatus.OK);
 	}
 
