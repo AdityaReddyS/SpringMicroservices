@@ -14,6 +14,7 @@ public class JSonProvidercontroller {
 	@GetMapping("/register")
 	public ResponseEntity<Customer> getcustomerinfo(){
 		Customer cust=new Customer(1012, "Shankar Reddy","Pedda Anberpet",1010.00f);
+		System.out.println("Customer.java");
 		return new ResponseEntity<Customer>(cust,HttpStatus.OK);
 	}
 
